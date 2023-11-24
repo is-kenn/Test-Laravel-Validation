@@ -17,7 +17,7 @@ class Uppercase implements ValidationRule
         $first_char = substr($value, 0, 1);
 
         if (! ctype_upper($first_char)) {
-            $fail('The title does not start with an uppercased letter');
+            $fail('The :attribute does not start with an uppercased letter');
         }
     }
 }
